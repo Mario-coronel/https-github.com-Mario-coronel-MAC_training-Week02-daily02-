@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EMI">
+
+    <TextView
+        android:id="@+id/tvLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Base Loan" />
+
+    <EditText
+        android:id="@+id/etLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tvLoan" />
+
+    <TextView
+        android:id="@+id/tvAnnualInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etLoan"
+        android:text="Annual Int" />
+
+    <EditText
+        android:id="@+id/etAnnualInt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoan"
+        android:layout_toRightOf="@id/tvAnnualInt" />
+
+    <TextView
+        android:id="@+id/tvMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAnnualInt"
+        android:gravity="center"
+        android:text="Months : " />
+
+    <SeekBar
+        android:id="@+id/sbMonths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMonths"
+        android:layout_margin="30dp"
+        android:max="72" />
+
+
+    <TextView
+        android:id="@+id/tvMontly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sbMonths"
+        android:gravity="center"
+        android:text="Montly Paymet : " />
+
+    <TextView
+        android:id="@+id/tvTotalDebt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMontly"
+        android:gravity="center"
+        android:text="Total Debt : " />
+
+</RelativeLayout>
